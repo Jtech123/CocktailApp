@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CocktailUWPNew.CocktailDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="cocktailImage" HeightRequest="300"/>
+            <Label x:Name="cocktailTitle" FontSize="26"/>
+            <Label x:Name="cocktailDescription"/>
+            <Label x:Name="cocktailAlcohol" FontSize="Small"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

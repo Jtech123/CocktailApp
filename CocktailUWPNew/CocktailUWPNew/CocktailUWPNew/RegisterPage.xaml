@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CocktailUWPNew.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kamikaze-cocktail.jpg/1920px-Kamikaze-cocktail.jpg" HeightRequest="200"></Image>
+            <Label Text="Cocktail App" FontSize="40" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <Entry Placeholder="Username" WidthRequest="500" MinimumWidthRequest="100" x:Name="UsernameBox" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Entry Placeholder="Password" WidthRequest="500" MinimumWidthRequest="100" IsPassword="True" HorizontalTextAlignment="Center" x:Name="PasswordBox" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <DatePicker x:Name="BirthDate" WidthRequest="500" MinimumWidthRequest="100" MinimumDate="01/01/1900" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Button x:Name="RegisterBtn" Text="Register" Clicked="RegisterBtn_Clicked"  HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <Button x:Name="BackBtn" Text="Back" Clicked="BackBtn_Clicked" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

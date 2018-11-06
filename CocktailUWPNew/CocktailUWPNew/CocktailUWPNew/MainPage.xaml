@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CocktailUWPNew"
+             x:Class="CocktailUWPNew.MainPage">
+
+    <StackLayout>
+        <Label x:Name="tester23"/>
+        <ListView x:Name="cocktails" RowHeight="60" ItemTapped="cocktails_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}" FontSize="24"/>
+                                <Label Text="{Binding AlcoholPercentage}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
